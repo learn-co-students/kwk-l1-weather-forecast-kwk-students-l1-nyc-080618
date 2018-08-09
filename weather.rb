@@ -29,13 +29,6 @@ end
 # `The city is New York.` `The description is Partly Cloudy.` `The temperature is 66.3.`
 
 def city_weather_info(weather)
-  # location = location(weather)
-  # description = description(weather)
-  # temperature = weather[:temperature_farenheit]
-  
-  # key_array = weather.keys
-  # value_array = weather.values
-  # index = 0
   weather.each do |key, value|
     puts "The #{key} is #{value}."
   end
@@ -49,5 +42,3 @@ def convert_temp(weather)
 end
   
 # Hint - how can we find the algorithm to convert Farenheit to Celsius?
-
-city_weather_info(weather)
